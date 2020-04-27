@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature</legend>
+
+			<form action="recapitulation.php" method="GET" name="authentification" >
+				
+				<label> Civilité :</label>
+				<select name="civilites" >
+					<option value="Mr" />Monsieur</option>
+					<option value="Mme" />Madame</option>
+					<option value="Mlle" />Mademoiselle</option>
+				
+				
+				</select>
+				
+				<br/>
+				<br/>
+				<label> Nom :</label>
+				<input type="text" name="nom" placeholder="Saisir votre nom" />
+				
+				<br/>
+				<br/>
+				<label> Prenom :</label>
+				<input type="text" name="prenom" placeholder="Saisir votre prénom"/>
+				
+				
+				<br/>
+				<br/>
+				<label> Date de naissance :</label>
+				<input type="date" required name="date" placeholder="Saisir date de naissance"/>
+				
+				<br/>
+				<br/>
+				<label> Numéro de téléphone :</label>
+				<input type="tel" name="numero" placeholder="0x-xx-xx-xx-xx"/>
+				
+				<br/>
+				<br/>
+				<label> Adresse électronique :</label>
+				<input type="email" name="email" placeholder="aaaaa@bbbbb.ccc"/>
+				
+				<br/>
+				<br/>
+				<label> Niveau en PHP :</label>
+				<br/>
+				<br/>
+				<input type="radio" name="niveau" value="deb" checked />Débutant
+				<input type="radio" name="niveau" value="moy" />Moyen
+				<input type="radio" name="niveau" value="bon" />Bon
+				
+				<br/>
+				<br/>
+				<label> Frameworks PHP pratiqués :</label>
+				<br/>
+				<br/>
+				<input type="checkbox" name="langues[]" value="1" /> Symfony
+				<input type="checkbox" name="langues[]" value="2" /> Codelgniter
+				<input type="checkbox" name="langues[]" value="3" /> FuelPHP
+				<input type="checkbox" name="langues[]" value="4" /> CakePHP
+				<input type="checkbox" name="langues[]" value="5" /> Laravel
+				
+				<br/>
+				<br/>
+				
+				<label> Moi :</label>
+				<br/>
+				<br/>
+				<textarea name="moi" rows="7" cols="60" ></textarea>
+				
+				<br/>
+				<br/>
+				<input type="submit" value="Valider" />
+
+				<input type="reset" value="Annuler" />
+
+			</form>
+
+
+		</fieldset>
+		
+	</body>
+	
+</html>
